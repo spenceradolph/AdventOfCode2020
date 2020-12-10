@@ -16,6 +16,8 @@ import { Day7Part1, Day7Part2 } from './Day7';
 import { Day8Part1, Day8Part2 } from './Day8';
 // @ts-ignore
 import { Day9Part1, Day9Part2 } from './Day9';
+// @ts-ignore
+import { Day10Part1, Day10Part2 } from './Day10';
 
 //Day1Part1();
 //Day1Part2();
@@ -42,4 +44,7 @@ import { Day9Part1, Day9Part2 } from './Day9';
 //Day8Part2();
 
 //Day9Part1();
-Day9Part2();
+//Day9Part2();
+
+// Day10Part1();
+Day10Part2();
