@@ -11,12 +11,8 @@ const program = (newInput: typeof input) => {
             return;
         }
 
-        if (!instructionsVisited.includes(instructionPointer)) {
-            instructionsVisited.push(instructionPointer);
-        } else {
-            return;
-        }
-
+        if (instructionsVisited.includes(instructionPointer)) return; // repeated
+        instructionsVisited.push(instructionPointer);
         const { operation, argument } = newInput[instructionPointer];
 
         switch (operation) {
@@ -48,6 +44,6 @@ export const Day8Part2 = () => {
         if (operation == 'nop') inputCopy[x].operation = 'jmp';
         if (operation == 'jmp') inputCopy[x].operation = 'nop';
 
-        program(inputCopy);
+        program(inputCopy); // could check if success -> stop rest of loop
     }
 };

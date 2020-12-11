@@ -3,7 +3,7 @@ import { input, TREE } from '../input';
 export const Day3Part2 = () => {
     const lengthOfLine = input[0].length;
 
-    // Right 1, Down 1
+    // Right 1, Down 1 // TODO: make this a function call to simplify
     let numTreeHits1 = 0;
     let slopeRight = 1;
     let slopeDown = 1;

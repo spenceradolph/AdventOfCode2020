@@ -15,5 +15,4 @@ export const Day1Part2 = () => {
     }
 
     console.log('No Solution was found...');
-    return;
 };

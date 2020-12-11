@@ -20,9 +20,7 @@ const canItHold = (bagColor: string, searchColor: string) => {
 export const Day7Part1 = () => {
     let numContainShinyGold = 0;
 
-    for (const bag of input) {
-        numContainShinyGold += canItHold(bag.color, 'shiny gold') ? 1 : 0; // Each top-level parent eith can or can't
-    }
+    for (const bag of input) numContainShinyGold += canItHold(bag.color, 'shiny gold') ? 1 : 0; // Each top-level parent either can or can't
 
     console.log(numContainShinyGold);
 };

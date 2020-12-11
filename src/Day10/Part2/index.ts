@@ -5,9 +5,7 @@ export const Day10Part2 = () => {
     sortedInput = [0, ...sortedInput]; // 0 is the charging outlet
 
     let arrayOfDiffs = [];
-    for (let x = 0; x < sortedInput.length - 1; x++) {
-        arrayOfDiffs.push(sortedInput[x + 1] - sortedInput[x]);
-    }
+    for (let x = 0; x < sortedInput.length - 1; x++) arrayOfDiffs.push(sortedInput[x + 1] - sortedInput[x]);
 
     let currentStreak = 0;
     let numWays = 1;

@@ -6,13 +6,12 @@ export const Day8Part1 = () => {
     let instructionsVisited: number[] = [];
 
     while (true) {
-        if (!instructionsVisited.includes(instructionPointer)) {
-            instructionsVisited.push(instructionPointer);
-        } else {
+        if (instructionsVisited.includes(instructionPointer)) {
             console.log(accumulator);
             break;
         }
 
+        instructionsVisited.push(instructionPointer);
         const { operation, argument } = input[instructionPointer];
 
         switch (operation) {
